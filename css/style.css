@@ -1,0 +1,288 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+html{
+  scroll-behavior: smooth;
+}
+  
+  body {
+    margin: 0;
+  }
+
+.h1{
+  font-size: 3rem;
+}
+
+
+  /* navbar */
+  .navbar{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+  }
+  .navbar::before{
+    content: "";
+    position: absolute;
+    background-color: #e1eedd;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+  .navbar ul{
+    display: flex;
+    list-style: none;
+  }
+  .navbar ul li{
+    font-size: 1.1rem;
+    font-family: 'Times New Roman';
+  }
+  .navbar ul li a{
+    padding: 5px 20px;
+    text-decoration: none;
+    color: #183a1d;
+  }
+  .navbar ul li a:hover{
+    border-bottom: 2px solid #f6c453;
+  }
+
+  /* Style the header */
+  .header {
+    padding: 20px;
+    text-align: center;
+  }
+
+ /* Home section */
+ #homepage{
+   display: flex;
+   flex-direction: column;
+   height: 600px;
+   justify-content: center;
+   align-items: center;
+   background-color: #fefbe9;
+ }
+#home ::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.heading{
+  color: #183a1d;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  font-size: 3rem;
+  transform: scale(1,1,3);
+  padding: 10px;
+}
+
+
+/* Biodata section */
+#Biodata{
+  display: flex;
+  flex-direction: column;
+  background-color: #fefbe9;
+}
+h3{
+  text-align:center;
+  background-color: #183a1d;
+  font-size: 3rem;
+  color: #e1eedd;
+  margin: 40px;
+}
+.img1{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 20px solid #183a1d;
+}
+table{
+  font-family: arial;
+  border-collapse: collapse;
+  width: 60%;
+} 
+
+th,td{
+  border: 1px solid #183a1d;
+  text-align: center; 
+  padding: 6px;
+  border-collapse: collapse;
+  background-color: #e1eedd;
+  color: #183a1d;
+}
+table.center{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Education section */
+#Education{
+  display: flex;
+  flex-direction: column;
+  background-color: #fefbe9; 
+}
+#education table{
+  border: 2px solid black;
+  border-collapse: collapse;
+  padding: 8px;
+  width: 90%;
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+}
+
+.education th{
+  border: 2px solid black;
+  text-align: center;
+  color: #123c69;
+} 
+.education td{
+  border: 2px solid black;
+  text-align: justify;
+  padding: 15;
+  color: black;
+  line-height: 1.6;
+}
+#education table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Family Section*/
+#family{
+  display: flex;
+  flex-direction: column;
+  background-color: #fefbe9; 
+}
+#family h1{
+  color: #f0a04b;
+  margin: 10px;
+  font-size: 2rem;
+}
+.family{
+  display: flex;
+  font-family: arial;
+}
+.family img{
+  width: 600px;
+  height: 400px;
+  padding: 0px 30px;
+}
+.columns{
+  display: grid;
+  grid-template-columns: auto;
+  padding-left: 50px;
+}
+.box{
+  height: 280px;
+  width: 700px;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #e1eedd;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 20px;
+}
+.box p{
+  line-height: 1.4;
+  color: #183a1d;
+  font-size: 1rem;
+}
+
+/* Gallery Section */
+#gallery{
+  display: flex;
+  flex-direction: column;
+  background-color: #fefbe9; 
+}
+.gallery{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.gallery img{
+  width: 360px;
+  height: 640px;
+  padding:10px;
+  margin: 10px;
+}
+.gallery video{
+  display: block;
+  padding:10px;
+  margin: 10px;
+}
+
+/* Book Review Section */
+#bookreview{
+  display: flex;
+  flex-direction: column;
+  background-color: #fefbe9; 
+  height: 800px;
+}
+#bookreview h2{
+  color: #f0a04b;
+  margin: 10px;
+  font-size: 2rem;
+}
+.bookreview{
+  display: flex;
+  text-align: justify;
+  padding: 70px;
+  line-height: 1.6;
+}
+.bookreview img{
+  width: 500px;
+  height: 400px;
+  margin: 10px;
+  padding: 0 30px;
+}
+
+/* Contact Section */
+#contact{
+  display: flex;
+  flex-direction: column;
+  background-color: #183a1d;
+} 
+#contact h1{
+  margin: 50px;
+  color: #fefbe9;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.input{
+  padding: 15px 20px;
+  margin: 15px;
+  width: 40%;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+}
+#message{
+  margin: 15px;
+  padding: 10px;
+  border-radius: 20px;
+}
+#submit{
+  padding: 15px 20px;
+  margin: 30px;
+  width: 15%;
+  border-radius: 20px;
+  background-color: black;
+  color: #e1eedd;
+  border:none;
+  outline: none;
+}
+#submit:hover{
+  background-color: #e1eedd;
+  color: #183a1d;
+  cursor: pointer;
+}
+
+
